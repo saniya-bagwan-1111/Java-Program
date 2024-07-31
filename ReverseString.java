@@ -22,6 +22,17 @@ public class ReverseString{
         String reverse=new StringBuilder(inputstring).reverse().toString();
         System.out.println("Using StringBuilder"+reverse);
     }
+    public static void PalindromeCheck(String inpuString)
+    {
+        String reverse=new StringBuilder(inpuString).reverse().toString();
+        if(inpuString.equals(reverse))
+        {
+            System.out.println("It is palindrome String");
+        }
+        else{
+            System.out.println("It is not palindrome String");
+        }
+    }
     public static void main(String args[])
     {
         String inputstring;
@@ -30,5 +41,7 @@ public class ReverseString{
         inputstring=sc.nextLine();
         usingforLoop(inputstring);
         usingStringBuilderclass(inputstring);
+        PalindromeCheck(inputstring);
+        sc.close();
     }
 }
