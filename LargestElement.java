@@ -24,5 +24,6 @@ class LargestElement{
         }
         System.out.println();
         System.out.println("Largest element "+max);
+        sc.close();
     }
 }
